@@ -24,7 +24,6 @@ def loadUserId():
         print(e)
         return None
 
-
 def saveUserId(userId):
         idFile = open(config.idfilePath, 'a')
         idFile.write(userId+';')
@@ -70,12 +69,11 @@ def handle_message(event):
     #line_bot_api.reply_message(event.reply_token,TextSendMessage(text="收到訊息!!"))   # reply api example
 
 def init(port=32768):    
-    global user_id_set
-    idList = loadUserId()
-    if idList: user_id_set = set(idList)       
     pushLineMsg('LineBot is ready.')
     app.run('127.0.0.1', port=port, threaded=True, use_reloader=False)
 
+idList = loadUserId()
+if idList: user_id_set = set(idList)                   
 if __name__ == "__main__":
     init()
     

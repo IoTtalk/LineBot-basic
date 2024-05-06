@@ -11,6 +11,8 @@ def ShowMsg():
 t = threading.Thread(target=ShowMsg)
 t.daemon = True   
 t.start()        
+
+LineBot.pushLineMsg('This is an active push message.')
         
 LineBot.init(port=32768)
 
