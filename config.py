@@ -1,6 +1,7 @@
 ### LineBot Information ###
-ChannelAccessToken = 'Please provide ChannelAccessToken'
 ChannelSecret = 'Please provide ChannelSecret'
+ChannelAccessToken = 'Please provide ChannelAccessToken'
+
 
 ### Line ID File Path ###
 idfilePath = './userIdFile'
