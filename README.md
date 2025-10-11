@@ -1,6 +1,6 @@
 # LineBot-basic
 
-LineBot SDK and Flask are required.
+Supports the LINE Message API version 3. LineBot SDK and Flask are required.
 
 ## Installation:
 
