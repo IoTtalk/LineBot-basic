@@ -5,8 +5,8 @@ def ShowMsg():
     while True:    
         if len(LineBot.msg_queue) >0:
             msg = LineBot.msg_queue.pop(0)
-            print(f'LineBot message = {msg}')
-        time.sleep(5)
+            print(f'\nMessage from Line App: {msg}\n')
+        time.sleep(1)
 
 t = threading.Thread(target=ShowMsg)
 t.daemon = True   
